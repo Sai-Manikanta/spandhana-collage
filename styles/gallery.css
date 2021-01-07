@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dfe6e9;
+}
+h1 {
+    text-align: center;
+    padding: 50px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2d3436;
+}
+#gallery-container {
+    padding: 0px 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#gallery-container > * {
+     flex: 0 1 40%;
+     max-width: 48%;
+     margin-bottom: 20px;
+     border-radius: 3px;
+}
+@media screen and (max-width:800px) {
+    #gallery-container {
+        display: block;
+        padding: 40px;
+    }
+    #gallery-container > * {
+        max-width: 100%;    
+    }
+}
